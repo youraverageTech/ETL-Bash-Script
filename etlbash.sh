@@ -16,7 +16,7 @@ export PGPASSWORD='AdminPGdb'
 
 # creating table if not exists
 echo "Creating table if not exists"
-psql -U postgres -h postgres -p 5432 -d etlbash -f create_table.sql
+psql -U postgres -h localhost -p 5432 -d etlbash -f create_table.sql
 
 # load data
 echo "Loading data"
